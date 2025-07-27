@@ -8,3 +8,12 @@ section{
 #about{
     background-image: url(im/bgABOUT.png);
 }
+#skills{
+  background-image: url(im/bgSKILLS.png);
+}
+#works{
+  background-image: url(im/bgWORKS.png);
+}
+#comments{
+  background-image: url(bgCOMMENTS.png);
+}
