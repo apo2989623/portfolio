@@ -24,23 +24,57 @@ section{
 
 .maskot{
   width: 92px;
+  color: #BBFF2C;
 }
 .window{ 
-  background-image: url(im/form1.png);
-  border: 3px solid red;
-  width: 851px;
-  height: 229px;
-  padding-top:90px;
-  box-sizing: border-box; 
+background-image: url(im/form1.png);
+border: 3px solid red;
+width: 851px;
+height: 229px;
+padding-top:90px;
+box-sizing: border-box; 
+margin: 0 auto; 
 }
 .window_title{
+  text-align: center; 
+  line-height: 0.9;
   font-family:Inter;
   font-size: 80px;
   font-weight: 700px;
+  color: #383838;
 }
 
 .window__apo{
-  font-family:Comfortaa;
-    font-size: 20px;
-  font-weight: 700px;
+font-family:Comfortaa;
+font-size: 20px;
+font-weight: 700px;
+line-height: 2; /* Чем больше значение, тем ниже текст */
+margin-left: 60px;    
+color: #383838;
+   
+}
+
+.button {
+  background-color: #BBFF2C;
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 30px auto;
+  transition: all 0.3s ease;
+}
+
+/* Тень НЕ меняется при наведении */
+.button:hover {
+  background-color: #A8EB28;
+}
+
+/* Тень НЕ меняется при нажатии */
+.button:active {
+  transform: translateY(4px);
 }
