@@ -36,12 +36,12 @@ box-sizing: border-box;
 margin: 0 auto; 
 }
 .window_title{
-  text-align: center; 
-  line-height: 0.9;
-  font-family:Inter;
-  font-size: 80px;
-  font-weight: 700px;
-  color: #383838;
+text-align: center; 
+line-height: 0.9;
+font-family:Inter;
+font-size: 80px;
+font-weight: 700px;
+color: #383838;
 }
 
 .window__apo{
