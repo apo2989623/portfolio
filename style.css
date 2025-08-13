@@ -1,61 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-*{
+
+* {
   margin: 0;
 }
 
-#main{
-    background-image: url(im/bgMAIN.png);
-    display: flex; 
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
+/* Основные стили секций */
+section {
+  min-height: 100vh;
 }
-section{
-    min-height: 100vh;
+
+#main {
+  background-image: url(im/bgMAIN.png);
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#about{
-    background-image: url(im/bgABOUT.png);
+
+#about {
+  background-image: url(im/bgABOUT.png);
 }
-#skills{
+
+#skills {
   background-image: url(im/bgSKILLS.png);
 }
-#works{
+
+#works {
   background-image: url(im/bgWORKS.png);
 }
-#comments{
+
+#comments {
   background-image: url(im/bgCOMMENTS.png);
 }
 
-.maskot{
+/* Стили для маскота и окон */
+.maskot {
   width: 92px;
   color: #BBFF2C;
 }
-.window{ 
-background-image: url(im/form1.png);
-width: 851px;
-height: 229px;
-padding-top:90px;
-box-sizing: border-box; 
-margin: 0 auto; 
-}
-.window_title{
-text-align: center; 
-line-height: 0.9;
-font-family:Inter;
-font-size: 80px;
-font-weight: 700px;
-color: #383838;
+
+.window { 
+  background-image: url(im/form1.png);
+  width: 851px;
+  height: 229px;
+  padding-top: 90px;
+  box-sizing: border-box; 
+  margin: 0 auto; 
 }
 
-.window__apo{
-font-family:Comfortaa;
-font-size: 20px;
-font-weight: 700px;
-line-height: 2; /* Чем больше значение, тем ниже текст */
-margin-left: 60px;    
-color: #383838;
-   
+.window_title {
+  text-align: center; 
+  line-height: 0.9;
+  font-family: Inter;
+  font-size: 80px;
+  font-weight: 700;
+  color: #383838;
 }
+
+.window__apo {
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 2;
+  margin-left: 60px;    
+  color: #383838;
+}
+
+/* Стили кнопки */
 .button {
   background-color: #BBFF2C;
   color: black;
@@ -63,7 +74,7 @@ color: #383838;
   border: none;
   border-radius: 100px;
   font-size: 20px;
-  font-weight: 700px;
+  font-weight: 700;
   cursor: pointer;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
   display: block;
@@ -71,33 +82,58 @@ color: #383838;
   transition: all 0.3s ease;
   font-family: Comfortaa;
 }
-/* Тень НЕ меняется при наведении */
+
+/* Стили для hero-section */
 .hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Фоновое изображение на всю секцию */
+.full-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Контент поверх фона */
+.content-wrapper {
+  position: relative;
+  z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 119px 20px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 119px 20px;
 }
 
+/* Текстовый блок */
 .text-block {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 12px;
   max-width: 700px;
+  margin: 0 auto 50px;
   text-align: center;
-  margin-bottom: 50px;
 }
 
+/* Фиолетовая плашка */
 .purple-photo-container {
+  background-color: rgba(138, 43, 226, 0.85);
   width: 894px;
   height: 298px;
-  background-color: #8A2BE2;
   border-radius: 12px;
   position: relative;
-  margin: 30px auto;
+  margin: 0 auto;
   padding: 24px;
   box-sizing: border-box;
 }
 
+/* Белая плашка с фото */
 .photo-plate {
   width: 376px;
   height: 346px;
@@ -108,8 +144,11 @@ color: #383838;
   top: 50%;
   transform: translateY(-50%);
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
 }
 
+/* Точки */
 .dots-container {
   position: absolute;
   top: 20px;
@@ -124,29 +163,36 @@ color: #383838;
   border-radius: 50%;
 }
 
-/* Первая точка */
-.dot-1 {
-  background-color: #8A2BE2; /* Основной фиолетовый */
-}
+.dot-1 { background-color: #8A2BE2; }
+.dot-2 { background-color: #9B51E0; }
+.dot-3 { background-color: #AD7BEB; }
 
-/* Вторая точка */
-.dot-2 {
-  background-color: #9B51E0; /* Средний фиолетовый */
-}
-
-/* Третья точка */
-.dot-3 {
-  background-color: #AD7BEB; /* Светлый фиолетовый */
-}
-
+/* Фото внутри белой плашки */
 .photo-on-purple {
-  width: calc(100% - 40px); /* 336px (376 - 20*2) */
+  width: 336px;
   height: 186px;
   object-fit: cover;
   border-radius: 4px;
-  margin: 57px 20px 103px 20px; /* сверху | справа | снизу | слева */
+  margin: 57px auto 20px;
+  display: block;
 }
 
+/* Текст на плашке */
+.plate-caption {
+  padding: 0 20px 20px;
+  text-align: left;
+  color: #333;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.caption-line {
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+/* Кнопка "Мои навыки" */
+/* Кнопка "Мои навыки" с анимацией */
 .skills-button {
   position: absolute;
   left: 60px;
@@ -160,20 +206,60 @@ color: #383838;
   font-size: 1rem;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+  overflow: hidden;
+  z-index: 1;
 }
 
+/* Эффект при наведении */
 .skills-button:hover {
-  background-color: #f0f0f0;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  background-color: #f8f8f8;
 }
 
-.text-block::after {
-  content: "";
-  display: block;
+/* Эффект нажатия */
+.skills-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Анимация пульсации */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(138, 43, 226, 0.4);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(138, 43, 226, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(138, 43, 226, 0);
+  }
+}
+
+/* Применяем анимацию только когда не наведено и не активно */
+.skills-button:not(:hover):not(:active) {
+  animation: pulse 2s infinite;
+}
+
+/* Дополнительный эффект - подложка */
+.skills-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 1px;
-  background: #eee;
-  margin: 20px 0;
+  height: 100%;
+  background: linear-gradient(45deg, #8A2BE2, #A45EE9);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 25px;
+}
+
+.skills-button:hover::before {
+  opacity: 0.1;
 }
