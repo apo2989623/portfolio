@@ -5,6 +5,10 @@
 
 #main{
     background-image: url(im/bgMAIN.png);
+    display: flex; 
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
 }
 section{
     min-height: 100vh;
@@ -28,7 +32,6 @@ section{
 }
 .window{ 
 background-image: url(im/form1.png);
-border: 3px solid red;
 width: 851px;
 height: 229px;
 padding-top:90px;
@@ -53,28 +56,110 @@ margin-left: 60px;
 color: #383838;
    
 }
-
 .button {
   background-color: #BBFF2C;
   color: black;
   padding: 12px 24px;
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
+  border-radius: 100px;
+  font-size: 20px;
+  font-weight: 700px;
   cursor: pointer;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
   display: block;
   margin: 30px auto;
   transition: all 0.3s ease;
+  font-family: Comfortaa;
 }
-
 /* Тень НЕ меняется при наведении */
 .button:hover {
   background-color: #A8EB28;
 }
-
 /* Тень НЕ меняется при нажатии */
 .button:active {
   transform: translateY(4px);
+}
+@keyframes jump {
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-15px);
+  }
+}
+.decoration{
+  position: absolute;
+   bottom: 0;
+   left: 0;  
+   animation-name: jump;
+   animation-duration: 1s;
+   animation-direction: alternate;
+  animation-iteration-count: infinite ;
+}
+.hero-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 119px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-block {
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.text-block h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.text-block p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.purple-photo-container {
+  width: 894px;
+  height: 298px;
+  background-color: #8A2BE2;
+  border-radius: 12px;
+  position: relative;
+  margin: 30px auto;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.photo-on-purple {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 4px solid white;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.photo-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  color: white;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Горизонтальная линия как в примере */
+.text-block::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #eee;
+  margin: 20px 0;
 }
