@@ -72,30 +72,6 @@ color: #383838;
   font-family: Comfortaa;
 }
 /* Тень НЕ меняется при наведении */
-.button:hover {
-  background-color: #A8EB28;
-}
-/* Тень НЕ меняется при нажатии */
-.button:active {
-  transform: translateY(4px);
-}
-@keyframes jump {
-  from{
-    transform: translateY(0px);
-  }
-  to{
-    transform: translateY(-15px);
-  }
-}
-.decoration{
-  position: absolute;
-   bottom: 0;
-   left: 0;  
-   animation-name: jump;
-   animation-duration: 1s;
-   animation-direction: alternate;
-  animation-iteration-count: infinite ;
-}
 .hero-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -111,17 +87,6 @@ color: #383838;
   margin-bottom: 50px;
 }
 
-.text-block h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.text-block p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
 .purple-photo-container {
   width: 894px;
   height: 298px;
@@ -133,28 +98,77 @@ color: #383838;
   box-sizing: border-box;
 }
 
-.photo-on-purple {
-  width: 350px;
-  height: 250px;
-  object-fit: cover;
+.photo-plate {
+  width: 376px;
+  height: 346px;
+  background-color: white;
+  border-radius: 8px;
   position: absolute;
   right: 60px;
   top: 50%;
   transform: translateY(-50%);
-  border: 4px solid white;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
-.photo-caption {
+.dots-container {
   position: absolute;
-  bottom: 24px;
-  left: 24px;
-  color: white;
-  font-size: 1rem;
-  font-style: italic;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
 }
 
-/* Горизонтальная линия как в примере */
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* Первая точка */
+.dot-1 {
+  background-color: #8A2BE2; /* Основной фиолетовый */
+}
+
+/* Вторая точка */
+.dot-2 {
+  background-color: #9B51E0; /* Средний фиолетовый */
+}
+
+/* Третья точка */
+.dot-3 {
+  background-color: #AD7BEB; /* Светлый фиолетовый */
+}
+
+.photo-on-purple {
+  width: calc(100% - 40px); /* 336px (376 - 20*2) */
+  height: 186px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 57px 20px 103px 20px; /* сверху | справа | снизу | слева */
+}
+
+.skills-button {
+  position: absolute;
+  left: 60px;
+  bottom: 24px;
+  padding: 10px 25px;
+  background-color: white;
+  color: #8A2BE2;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.skills-button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
 .text-block::after {
   content: "";
   display: block;
