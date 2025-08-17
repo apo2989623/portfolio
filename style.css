@@ -340,27 +340,51 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
+
   top: 0;
   left: 0;
   z-index: -1;
 }
 
 
-.apo-im3 {
 
+.apo-2{
   display: block;
   width: 638px;
   height: 401px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 244px;
+  margin-top: 20px;
+}
+/* Ваши исходные стили + адаптация */
+.apo-im3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:244;
+  
 }
 
+.apo-im3 {
+  display: block;
+  width: 638px;
+  height: 401px;
+   margin-top: 200px;   /* Внешний отступ сверху */
 
-.apo-1 {
-  width: 60px;
-  height: 60px;
+}
+
+.apo-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 92px;
+  max-width: 92px; /* Совпадает с шириной apo-im3 */
+  margin-top: -200px; /* Поднимаем иконки на изображение */
+}
+
+.apo-icons img {
+  width: 92px;
+  height: 92px;
   object-fit: contain;
 }
 
@@ -368,24 +392,111 @@ section {
 
 
 
-.skill-container {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
+
+
+
+
+
+
+
+
+
+
+/*3*/
+
+.button2 {
+  background-color: #BBFF2C;
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 100px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 1px auto;
+  transition: all 0.3s ease; /* Плавность всех изменений */
+  font-family: 'Comfortaa', sans-serif;
+  margin-top: 30px; /* Регулируйте значение по желанию */
 }
 
-.main-image-wrapper {
+/* Анимация при наведении */
+.button2:hover {
+  transform: translateY(-5px); /* Поднимаем кнопку вверх */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); /* Увеличиваем тень */
+  background-color: #A5E626; /* Меняем цвет (опционально) */
+}
+
+/* Анимация при нажатии */
+.button2:active {
+  transform: translateY(2px); /* Опускаем кнопку */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Уменьшаем тень */
+}
+.apo7{
+   margin-top: 244px; /* Регулируйте значение по желанию */
+   font-size: 1;
+}
+
+.apo-im3-container {
   position: relative;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
 
-.icons-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: -50px; /* Поднимаем иконки вверх, накладывая на основное изображение */
-  z-index: 1;
+.text-overlay {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #ffffff; /* Белый цвет текста */
+  z-index: 2; /* Чтобы текст был поверх изображения */
+  padding: 0 20px;
 }
 
+.overlay-title {
+
+  /* Размеры блока */
+  width: -190px;          /* Ширина по горизонтали */
+  height: 6px;          /* Высота по вертикали */
+  font-family: 'Inter', sans-serif;
+  font-size: 150px;      /* Крупный размер */
+  line-height: 5px;    /* Равно высоте блока для однострочного текста */
+   text-shadow: 5px 5px black;
+
+}
+
+
+
+.overlay-description {
+  font-size: 1.5rem;
+    font-size: 480px;      /* Крупный размер */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Для адаптивности на мобильных устройствах */
+@media (max-width: 768px) {
+  .overlay-title {
+    font-size: 1.8rem;
+  }
+  
+  .overlay-description {
+    font-size: 1.2rem;
+  }
+}
+
+.additional-text-overlay {
+  position: absolute;
+  top: 55%; /* Регулируйте отступ сверху */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* Убедитесь, что выше фона и изображения */
+}
+
+.additional-text {
+  color: rgb(0, 0, 0); /* Пример стиля */
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-align: center;
+    font-family: 'Inter', sans-serif;
+}
