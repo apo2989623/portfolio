@@ -357,3 +357,35 @@ section {
   margin-top: 244px;
 }
 
+
+.apo-1 {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+
+
+
+
+.skill-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main-image-wrapper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: -50px; /* Поднимаем иконки вверх, накладывая на основное изображение */
+  z-index: 1;
+}
+
