@@ -112,69 +112,40 @@ section {
 }
 
 /* Обновленный текстовый блок */
-.text-block {
-  max-width: 700px;
+.section-title{
   margin: 0 auto 50px;
   text-align: center;
+ font-size: 80px;
+ font-family: Inter;
+ font-weight: 700;
+ text-transform: uppercase;
+ text-shadow: 5px 5px black;
+ color: white;
 }
-
-.text-block h1 {
-  font-size: 3.5rem;
-  color: white;
-  margin-bottom: 1.5rem;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  font-weight: 700;
-}
-
-.text-block p {
-  font-size: 1.3rem;
-  color: white;
-  line-height: 1.6;
-}
-
-/* Фиолетовая плашка */
+/* контейнер для фио и области карточки  */
 .purple-photo-container {
-  background-color: rgba(138, 43, 226, 0.85);
-  width: 894px;
-  height: 298px;
-  border-radius: 12px;
-  position: relative;
-  margin: 0 auto;
-  padding: 24px;
-  box-sizing: border-box;
+ display: flex;
+ align-items: center;
 }
-
 /* Белая плашка с фото */
-.photo-plate {
-  width: 376px;
-  height: 346px;
-  background-color: white;
-  border-radius: 8px;
-  position: absolute;
-  right: 60px;
-  top: 50%;
-  transform: translateY(-50%);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
+
 
 /* Точки */
 .dots-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   display: flex;
   gap: 8px;
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
+  border: 1px solid black;
 }
 
-.dot-1 { background-color: #8A2BE2; }
-.dot-2 { background-color: #9B51E0; }
-.dot-3 { background-color: #AD7BEB; }
+.dot-1 { background-color: #ff6A00; }
+.dot-2 { background-color: #ffe603; }
+.dot-3 { background-color: #04C800; }
 
 /* Фото внутри белой плашки */
 .photo-on-purple {
@@ -188,16 +159,9 @@ section {
 
 /* Левый текстовый блок - ОБНОВЛЕННЫЙ */
 .left-text-block {
-  position: absolute;
-  left: 60px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 320px; /* Немного увеличена ширина */
-  padding: 20px;
-  color: white;
-  z-index: 2;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400; /* Обычное начертание */
+  background-color: #792aff;
+  padding: 40px;
+  padding-right: 20px;
 }
 
 .left-text-block h3 {
@@ -208,10 +172,11 @@ section {
 }
 
 .left-text-block p {
-  font-size: 0.9rem; /* Уменьшенный размер */
-  line-height: 1.4;
-  font-weight: 400;
+  font-size: 20px; /* Уменьшенный размер */
+  font-weight: 700;
   margin-bottom: 8px;
+  font-family: Comfortaa;
+  color: #fff;
 }
 
 /* Кнопка "Мои навыки" */
@@ -290,16 +255,11 @@ section {
 }
 .photo-plate {
   width: 376px;
-  height: auto; /* Изменено с фиксированной высоты */
-  background-color: white;
   border-radius: 8px;
-  position: absolute;
-  right: 60px;
-  top: 50%;
-  transform: translateY(-50%);
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
   padding: 20px;
   box-sizing: border-box;
+  background-color: #d2d0f7;
 }
 
 .photo-on-purple {
