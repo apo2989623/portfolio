@@ -345,3 +345,8 @@ section {
   left: 0;
   z-index: -1;
 }
+
+.apo-img{
+max-width: 638px;
+max-height: 401;
+}
