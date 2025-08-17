@@ -346,7 +346,14 @@ section {
   z-index: -1;
 }
 
-.apo-img{
-max-width: 638px;
-max-height: 401;
+
+.apo-im3 {
+
+  display: block;
+  width: 638px;
+  height: 401px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 244px;
 }
+
