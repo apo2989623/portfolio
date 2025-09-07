@@ -558,10 +558,15 @@ header{
     display: flex;
     justify-content: space-between; /* равномерное распределение */
     align-items: center; /* выравнивание по вертикали */
+       gap: 18px; /* отступ между картинками */
+         padding-right: 108px;
+           padding-left: 73px;
+             padding-top: 77px;
 }
 
 .images-container img {
-    max-width: 100%;
+    width: 100px;
     height: auto;
+  
     flex: 1; /* картинки занимают равное пространство */
 }
