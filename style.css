@@ -37,6 +37,8 @@ section {
 .maskot {
   width: 92px;
   color: #BBFF2C;
+  
+    margin-right: 600px;
 }
 
 .window { 
@@ -47,7 +49,10 @@ section {
   box-sizing: border-box; 
   margin: 0 auto; 
 }
-
+.apo34{
+  width: 199;
+  height: 229;
+}
 .window_title {
   text-align: center; 
   line-height: 0.9;
@@ -569,4 +574,29 @@ header{
     height: auto;
   
     flex: 1; /* картинки занимают равное пространство */
+}
+.apo4 {
+  width: 199px;
+  height: 229px;
+   margin-top: 2px;
+  margin-right: 1700px;
+  animation: jump 1s ease-in-out infinite; /* ← вот здесь infinite */
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-15px); /* Новый кадр - подъем */
+  }
+  50% {
+    transform: translateY(-30px); /* Пик прыжка */
+  }
+  75% {
+    transform: translateY(-15px); /* Новый кадр - спуск */
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
