@@ -148,7 +148,7 @@ section {
   border: 1px solid black;
 }
 
-.dot-1 { background-color: #ff6A00; }
+.dot-1 { background-color: #ff6A00;    margin-bottom: 20px; }
 .dot-2 { background-color: #ffe603; }
 .dot-3 { background-color: #04C800; }
 
