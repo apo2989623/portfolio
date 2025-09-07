@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 /* Основные стили секций */
@@ -514,15 +515,17 @@ header{
   display: flex;
   justify-content: center;
   width: 100%;
-  position: absolute;
-  left: 50px;
+  top: 0;
   align-items: center;
+  padding: 20px 0;
 }
 .logo{
   color: #BBFF2C;
   font-family: Inter;
   font-size: 64px;
   font-weight: 700;
+  left: 50px;
+  position: absolute;
 }
 
 .menu_link{
@@ -599,4 +602,10 @@ header{
   100% {
     transform: translateY(0);
   }
+}
+
+
+.active{
+  background-color: #792aff;
+  color: #ffffff;
 }
