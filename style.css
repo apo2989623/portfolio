@@ -539,3 +539,29 @@ header{
   gap: 10px;
 
 }
+
+.section-title2{
+  margin: 0 auto 50px;
+  text-align: center;
+ font-size: 80px;
+ font-family: Inter;
+ font-weight: 700;
+ text-transform: uppercase;
+ text-shadow: 5px 5px black;
+ color: white;
+    padding-top: 130px;
+}
+
+
+
+.images-container {
+    display: flex;
+    justify-content: space-between; /* равномерное распределение */
+    align-items: center; /* выравнивание по вертикали */
+}
+
+.images-container img {
+    max-width: 100%;
+    height: auto;
+    flex: 1; /* картинки занимают равное пространство */
+}
