@@ -34,6 +34,77 @@ section {
   background-image: url(im/bgCOMMENTS.png);
 }
 
+.image-overlay {
+    position: relative;
+     margin-left: 214px;
+    display: inline-block;
+}
+
+.main-img {
+    width: 192px;
+    height: 320px;
+   
+}
+.main-img5{
+
+
+    margin-bottom: 83px;
+}
+
+
+
+.inner-img {
+    position: absolute;
+    width: 154px;
+    height: 140px;
+    margin-top: 9px;
+    top: 35px;
+    left: 19px;
+
+
+}
+
+
+  .inner-img2 {
+    position: absolute;
+    width: 154px;
+    height: 140px;
+    margin-top: 9px;
+    top: 186px;
+    left: 19px;
+   font-weight: 700; /* Обычное вместо bold */
+
+}
+
+
+  .inner-img3 {
+    position: absolute;
+    margin-top: 13px;
+    top: 214px;
+    left: 19px;
+   font-weight: 400; /* Обычное вместо bold */
+
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Стили для маскота и окон */
 .maskot {
   width: 92px;
@@ -426,7 +497,22 @@ section {
   font-family: 'Comfortaa', sans-serif;
   margin-top: 30px; /* Регулируйте значение по желанию */
 }
+.button3 {
+  background-color: #BBFF2C;
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 100px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 
+  margin: 1px auto;
+  transition: all 0.3s ease; /* Плавность всех изменений */
+  font-family: 'Comfortaa', sans-serif;
+  margin-top: 30px; /* Регулируйте значение по желанию */
+}
 /* Анимация при наведении */
 .button2:hover {
   transform: translateY(-5px); /* Поднимаем кнопку вверх */
@@ -439,6 +525,23 @@ section {
   transform: translateY(2px); /* Опускаем кнопку */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Уменьшаем тень */
 }
+.button3:hover {
+  transform: translateY(-5px); /* Поднимаем кнопку вверх */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); /* Увеличиваем тень */
+  background-color: #A5E626; /* Меняем цвет (опционально) */
+}
+
+/* Анимация при нажатии */
+.button3:active {
+  transform: translateY(2px); /* Опускаем кнопку */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Уменьшаем тень */
+}
+
+
+
+
+
+
 .apo7{
    margin-top: 244px; /* Регулируйте значение по желанию */
    font-size: 1;
