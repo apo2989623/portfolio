@@ -77,10 +77,6 @@ position: absolute;
     font-family:  ALS Sector, sans-serif; /* Добавленный шрифт */
      
 }
-
-
-
-
   .inner-img3 {
     position: absolute;
     margin-top: 13px;
@@ -92,26 +88,6 @@ position: absolute;
    
 
 }
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Стили для маскота и окон */
 .maskot {
   width: 92px;
@@ -119,7 +95,6 @@ position: absolute;
   
     margin-right: 600px;
 }
-
 .window { 
   background-image: url(im/form1.png);
   width: 851px;
@@ -166,7 +141,6 @@ position: absolute;
   transition: all 0.3s ease;
   font-family: Comfortaa;
 }
-
 /* Стили для hero-section */
 .hero-section {
   position: relative;
@@ -174,7 +148,6 @@ position: absolute;
   min-height: 100vh;
   overflow: hidden;
 }
-
 /* Фоновое изображение на всю секцию */
 .full-bg-image {
   position: absolute;
@@ -185,7 +158,6 @@ position: absolute;
   object-fit: cover;
   z-index: 0;
 }
-
 /* Контент поверх фона */
 .content-wrapper {
   position: relative;
@@ -472,18 +444,6 @@ position: absolute;
   height: 92px;
   object-fit: contain;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

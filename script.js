@@ -1,11 +1,10 @@
 const buttons = document.querySelectorAll(".menu_link");
-const active = document.querySelector(".active");
-const sections = document.querySelectorAll("section");
-
+let active = document.querySelector(".active");
+const sections = Array.from(document.querySelectorAll("section"));
 
 function apo(){
     const position = window.scrollY; 
-    console.log(position)
+
    
 
  
@@ -14,12 +13,16 @@ function apo(){
   
    for (let section of sections){
         const offsetBottom = section.offsetTop + section.offsetHeight;
-        if (section.offsetTop < position && position < offsetBottom) {
+        if (section.offsetTop <= position && position < offsetBottom) {
            targetSection = section;
            break;
         }
     }
-    console.log(targetSection);
+   const index = sections.indexOf(targetSection)
+   const  targetButton = buttons[index]
+   active.classList.remove("active");
+   targetButton.classList.add("active");
+   active = targetButton
 } 
 window.addEventListener("scroll", apo);
 
