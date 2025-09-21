@@ -74,8 +74,8 @@ position: absolute;
     top: 186px;
     left: 19px;
     font-weight: 700;
-      font-family:  ALS Sector, sans-serif; /* Добавленный шрифт */
-   
+    font-family:  ALS Sector, sans-serif; /* Добавленный шрифт */
+     
 }
 
 
@@ -88,6 +88,8 @@ position: absolute;
     left: 19px;
     font-weight: 400; /* Обычное вместо bold */
     font-family:  ALS Sector, sans-serif; /* Добавленный шрифт */
+    opacity: 0.5; /* от 0 (полностью прозрачный) до 1 (полностью непрозрачный) */
+   
 
 }
 
