@@ -66,15 +66,19 @@ section {
 
 
   .inner-img2 {
-    position: absolute;
+    
+position: absolute;
     width: 154px;
     height: 140px;
     margin-top: 9px;
     top: 186px;
     left: 19px;
-   font-weight: 700; /* Обычное вместо bold */
-
+    font-weight: 700;
+      font-family:  ALS Sector, sans-serif; /* Добавленный шрифт */
+   
 }
+
+
 
 
   .inner-img3 {
@@ -82,7 +86,8 @@ section {
     margin-top: 13px;
     top: 214px;
     left: 19px;
-   font-weight: 400; /* Обычное вместо bold */
+    font-weight: 400; /* Обычное вместо bold */
+    font-family:  ALS Sector, sans-serif; /* Добавленный шрифт */
 
 }
 
@@ -236,6 +241,7 @@ section {
 
 /* Левый текстовый блок - ОБНОВЛЕННЫЙ */
 .left-text-block {
+  font: 1em sans-serif;
   background-color: #792aff;
   padding: 40px;
   padding-right: 20px;
