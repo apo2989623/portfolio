@@ -43,11 +43,25 @@ section {
 .main-img {
     width: 192px;
     height: 320px;
+   padding-left:100px;
+
+
+
    
 }
+
+
+.main-img7 {
+    width: 192px;
+    height: 320px;
+  
+}
+
+
+
 .main-img5{
 
-
+    padding-left:10px;
     margin-bottom: 83px;
 }
 
@@ -60,9 +74,76 @@ section {
     margin-top: 9px;
     top: 35px;
     left: 19px;
+  padding-left:100px;
 
 
 }
+
+
+.inner-img1 {
+    position: absolute;
+    width: 154px;
+    height: 140px;
+    margin-top: 9px;
+    top: 35px;
+    left: 19px;
+
+
+
+}
+
+
+
+
+
+
+.inner-img21 {
+    
+position: absolute;
+    width: 154px;
+    height: 140px;
+    margin-top: 9px;
+    top: 186px;
+    left: 19px;
+    font-weight: 700;
+  
+    font-family:   sans-serif; /* Добавленный шрифт */
+     
+}
+  .inner-img31 {
+    position: absolute;
+    margin-top: 13px;
+    top: 214px;
+     
+    left: 19px;
+    font-weight: 400; /* Обычное вместо bold */
+    font-family:  Comfortaa, sans-serif; /* Добавленный шрифт */
+    opacity: 0.5; /* от 0 (полностью прозрачный) до 1 (полностью непрозрачный) */
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   .inner-img2 {
@@ -74,16 +155,18 @@ position: absolute;
     top: 186px;
     left: 19px;
     font-weight: 700;
-    font-family:  ALS Sector, sans-serif; /* Добавленный шрифт */
+      padding-left:100px;
+    font-family:   sans-serif; /* Добавленный шрифт */
      
 }
   .inner-img3 {
     position: absolute;
     margin-top: 13px;
     top: 214px;
+      padding-left:100px;
     left: 19px;
     font-weight: 400; /* Обычное вместо bold */
-    font-family:  ALS Sector, sans-serif; /* Добавленный шрифт */
+    font-family:  Comfortaa, sans-serif; /* Добавленный шрифт */
     opacity: 0.5; /* от 0 (полностью прозрачный) до 1 (полностью непрозрачный) */
    
 
