@@ -4,136 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header> 
-      <h1 class="logo">H.K</h1> 
-      <nav class="menu">
-        <a href="#main" class="menu_link active" >Главная</a>
-        <a href="#about" class="menu_link">Обо мне</a>
-        <a href="#skills" class="menu_link">Навыки</a>
-        <a href="#works" class="menu_link">Работы</a>
-        <a href="#comments" class="menu_link">Отзывы</a>
-      </nav>
+    <!-- Шапка сайта -->
+    <header>
+        <h1 class="logo">H.K</h1>
+        <nav class="menu">
+            <!-- Меню навигации по секциям страницы -->
+            <a href="#main" class="menu_link active">Главная</a>
+            <a href="#about" class="menu_link">Обо мне</a>
+            <a href="#skills" class="menu_link">Навыки</a>
+            <a href="#works" class="menu_link">Работы</a>
+            <a href="#comments" class="menu_link">Отзывы</a>
+        </nav>
+    </header>
 
-   </header>
+    <!-- Главная секция -->
     <section id="main">
-
+        <!-- Изображение маскота (героя) сайта -->
         <img src="im/maskot.png" alt="" class="maskot">
-
         <div class="window">
-            <h1 class="window_title"> Назаренко Кирилл</h1> 
+            <h1 class="window_title">Назаренко Кирилл</h1>
             <p class="window__apo">Личная страница разработчика</p>
         </div>
+        <!-- Кнопка с предложением узнать подробнее -->
         <button class="button2">Подробнее</button>
-        <img src="im/moving-planet.png" alt="" class="apo4"> 
+        <!-- Декоративное изображение (движущаяся планета) -->
+        <img src="im/moving-planet.png" alt="" class="apo4">
     </section>
-<section id="about" class="hero-section">
-  <img src="im/bgABOUT.png" alt="Фоновое изображение" class="full-bg-image">
-  
-  <!-- Добавленная анимированная картинка планеты -->
-  <img src="im/planet.png" alt="Планета" class="decoration planet-animation">
-  
-  <div class="content-wrapper">
-   
-      <h1 class="section-title"> Обо мне</h1>
-   
-    <div class="purple-photo-container">
-      <div class="left-text-block">
-        <p>Меня зовут Кирилл. Я занимаюсь разработкой современных сайтов и приложений</p>
-        <p>Мне нравится создавать интересные и современные проекты.</p>
-         <button class="button3">Мои навыки</button>
-      </div> 
-      <div class="photo-plate">
-        <div class="dots-container">
-          <span class="dot dot-1"></span>
-          <span class="dot dot-2"></span>
-          <span class="dot dot-3"></span>
+
+    <!-- Секция об авторе -->
+    <section id="about" class="hero-section">
+        <!-- Фоновое изображение секции -->
+        <img src="im/bgABOUT.png" alt="Фоновое изображение" class="full-bg-image">
+        <!-- Анимированная картинка планеты -->
+        <img src="im/planet.png" alt="Планета" class="decoration planet-animation">
+        <div class="content-wrapper">
+            <h1 class="section-title">Обо мне</h1>
+            <div class="purple-photo-container">
+                <div class="left-text-block">
+                    <p>Меня зовут Кирилл. Я занимаюсь разработкой современных сайтов и приложений</p>
+                    <p>Мне нравится создавать интересные и современные проекты.</p>
+                    <!-- Кнопка для перехода к секции с навыками -->
+                    <button class="button3">Мои навыки</button>
+                </div>
+                <div class="photo-plate">
+                    <!-- Декоративные точки вокруг фото -->
+                    <div class="dots-container">
+                        <span class="dot dot-1"></span>
+                        <span class="dot dot-2"></span>
+                        <span class="dot dot-3"></span>
+                    </div>
+                    <!-- Фото автора -->
+                    <img src="im/photo.png" alt="Мое фото" class="apo-img">
+                    <div class="info-text">
+                        <p><strong>Где живу:</strong> Санкт-Петербург</p>
+                        <p><strong>Возраст:</strong> 25 лет</p>
+                        <p><strong>Дата рождения:</strong> 01.01.1998</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <img src="im/photo.png" alt="Мое фото" class="apo-img">
-        <div class="info-text">
-          <p><strong>Где живу:</strong> Санкт-Петербург</p>
-          <p><strong>Возраст:</strong> 25 лет</p>
-          <p><strong>Дата рождения:</strong> 01.01.1998</p>
+    </section>
+
+    <!-- Секция с навыками -->
+    <section id="skills">
+        <div class="apo-im3-container">
+            <div class="background-image"></div> <!-- Фоновый элемент -->
+            <!-- Основное изображение -->
+            <img src="im/form3.png" alt="Основное изображение" class="apo-im3">
+            <!-- Первый текстовый блок -->
+            <div class="text-overlay">
+                <h1 class="overlay-title">навыки</h1>
+            </div>
+            <!-- Дополнительная текстовая надпись поверх изображения -->
+            <div class="additional-text-overlay">
+                <p class="additional-text">ЭТОТ САЙТ Я СДЕЛАЛ В РАМКАХ ОБУЧЕНИЯ ШКОЛЫ</p>
+                <div class="additional-text">
+                    ROCKET TECH SCHOOL
+                </div>
+            </div>
+            <style>
+                .centered-text {
+                    text-align: center;
+                }
+            </style>
+            <!-- Иконки технологий, которые использует автор -->
+            <div class="apo-icons">
+                <img src="im/html.png" alt="HTML">
+                <img src="im/css.png" alt="CSS">
+                <img src="im/js.png" alt="JS">
+            </div>
+            <!-- Кнопка перехода к работам -->
+            <button class="button3">смотреть работы</button>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="skills">
-  <div class="apo-im3-container">
-    <div class="background-image"></div> <!-- Фоновый элемент -->
-    
-    <img src="im/form3.png" alt="Основное изображение" class="apo-im3">
-    
-    <!-- Первый текстовый блок (существующий) -->
-    <div class="text-overlay">
-      <h1 class="overlay-title">навыки</h1>
-    </div>
-    
-    <!-- Новый текстовый блок поверх изображения -->
-    <div class="additional-text-overlay">
-      <p class="additional-text">ЭТОТ САЙТ Я СДЕЛАЛ В РАМКАХ ОБУЧЕНИЯ ШКОЛЫ <p></p></p>
-      
-    <div class="additional-text">
-    ROCKET TECH SCHOOL
-    </div>
-    </div>
-    <style>
-  .centered-text {
-    text-align: center;
-  }
-</style>
-    <div class="apo-icons"> 
-      <img src="im/html.png" alt="HTML">
-      <img src="im/css.png" alt="CSS">
-      <img src="im/js.png" alt="JS">
-    </div>  
-    <button class="button3">смотреть работы</button>
-  </div>
-</section>
+    <!-- Секция с работами -->
+    <section id="works">
+        <h1 class="section-title2">работы</h1>
+        <div class="images-container">
+            <!-- Несколько изображений-примеров работ -->
+            <img src="im/Снимок.JPGdfsdsf.JPG" alt="Image 1">
+            <img src="im/Снимок.JPGdsa.JPG" alt="Image 2">
+            <img src="im/Снимок.JPGdsad.JPG" alt="Image 3">
+        </div>
+    </section>
 
-<section id="works">
- <h1 class="section-title2"> работы</h1>
- <div class="images-container">
-    <img src="im/Снимок.JPGdfsdsf.JPG" alt="Image 1">
-    <img src="im/Снимок.JPGdsa.JPG" alt="Image 2">
-    <img src="im/Снимок.JPGdsad.JPG" alt="Image 3">
-</div>
-</section>
+    <!-- Секция с отзывами -->
+    <section id="comments">
+        <h1 class="section-title2">отзывы</h1>
+        <!-- Первый отзыв -->
+        <div class="image-overlay">
+            <img src="im/card.png" alt="Основная картинка" class="main-img">
+            <img src="im/photo1.png" alt="Внутренняя картинка" class="inner-img">
+            <h1 class="inner-img2">владимир</h1>
+            <h1 class="inner-img3">Основатель<br>Rocket Tech <br>School</h1>
+            <img src="im/Frame 1 (1) (1).png" class="main-img5">
+        </div>
+        <!-- Второй отзыв -->
+        <div class="image-overlay">
+            <img src="im/card.png" alt="Основная картинка" class="main-img7">
+            <img src="im/photo2.png" alt="Внутренняя картинка" class="inner-img1">
+            <h1 class="inner-img21">Диана</h1>
+            <h1 class="inner-img31">Product Lead<br>Rocket Tech <br>School</h1>
+            <img src="im/Frame 1 (2).png" class="main-img5">
+        </div>
+    </section>
 
-<section id="comments">
- <h1 class="section-title2"> отзывы</h1>
-
-<div class="image-overlay">
-    <img src="im/card.png" alt="Основная картинка" class="main-img"> 
-    <img src="im/photo1.png" alt="Внутренняя картинка" class="inner-img">
-    <h1 class="inner-img2">владимир</h1>
-    <h1 class="inner-img3">Основатель<br>Rocket Tech <br>School </h1>
-   <img src="im/Frame 1 (1) (1).png"  class="main-img5 "> 
-      
-  
-</div>
-  
-<div class="image-overlay">
-    <img src="im/card.png" alt="Основная картинка" class="main-img7"> 
-    <img src="im/photo2.png" alt="Внутренняя картинка" class="inner-img1">
-    <h1 class="inner-img21">Диана</h1>
-   <h1 class="inner-img31">Product Lead<br>Rocket Tech <br>School  </h1>
-   <img src="im/Frame 1 (2).png"  class="main-img5 "> 
-      
-  
-</div>
-  
-
-
-
-
-</section>
-
-   <script src="script.js"></script>
+    <!-- Подключение JS-файла -->
+    <script src="script.js"></script>
 </body>
 </html>

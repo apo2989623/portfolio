@@ -1,28 +1,28 @@
-const buttons = document.querySelectorAll(".menu_link");
-let active = document.querySelector(".active");
-const sections = Array.from(document.querySelectorAll("section"));
+const buttons = document.querySelectorAll(".menu_link"); // Получение всех кнопок меню (элементы с классом .menu_link)
+let active = document.querySelector(".active"); // Поиск активной кнопки (с классом .active)
+const sections = Array.from(document.querySelectorAll("section")); // Получение всех секций на странице и преобразование в массив
 
-function apo(){
-    const position = window.scrollY; 
+function apo() { // Объявление функции, которая будет отслеживать смену активной кнопки при прокрутке
+    const position = window.scrollY; // Получение текущего положения прокрутки по вертикали
 
-   
+    let targetSection = null; // Здесь будет храниться секция, в которой находится сейчас пользователь
 
- 
-    let targetSection = null;
-
-  
-   for (let section of sections){
-        const offsetBottom = section.offsetTop + section.offsetHeight;
+    // Проходимся по всем секциям
+    for (let section of sections) {
+        const offsetBottom = section.offsetTop + section.offsetHeight; // Вычисляем нижнюю границу секции
+        // Проверяем, находится ли текущее положение прокрутки внутри данной секции
         if (section.offsetTop <= position && position < offsetBottom) {
-           targetSection = section;
-           break;
+            targetSection = section; // Если да — запоминаем эту секцию как текущую
+            break; // Прерываем цикл, так как нужная секция уже найдена
         }
     }
-   const index = sections.indexOf(targetSection)
-   const  targetButton = buttons[index]
-   active.classList.remove("active");
-   targetButton.classList.add("active");
-   active = targetButton
-} 
-window.addEventListener("scroll", apo);
 
+    const index = sections.indexOf(targetSection); // Определяем индекс текущей секции в массиве
+    const targetButton = buttons[index]; // Находим соответствующую кнопку меню по такому же индексу
+
+    active.classList.remove("active"); // Удаляем класс .active у предыдущей активной кнопки
+    targetButton.classList.add("active"); // Добавляем класс .active к новой активной кнопке
+    active = targetButton; // Обновляем переменную active — теперь она указывает на новую активную кнопку
+}
+
+window.addEventListener("scroll", apo); // Добавляем обработчик события scroll — он будет запускать функцию apo при прокрутке страницы
