@@ -602,7 +602,9 @@ header{
 }
 
 
-
+.menu-control{
+  display: none;
+}
 
 
 
@@ -613,11 +615,13 @@ header{
   
   .window {    
   background-image: url(im/form1.png);   
+  background-size: 320px 150px;
   width: 320px;   
   height: 150px;   
   padding-top: 90px;   
   box-sizing: border-box;    
   margin: 0 auto;  
+
 }
 #main {   
   background-image: url(im/bgMAIN.png); /* Задний фон главной секции */
@@ -625,7 +629,7 @@ header{
   flex-direction: column;   
   align-items: center;   
   justify-content: center; 
-  width: 360px;
+ 
 }
 .window_title {   
   text-align: center;    
@@ -666,5 +670,56 @@ header{
   margin-right: 180px;   
   animation: jump 2s ease-in-out infinite; /* Анимация прыжка маскота */
 }
+.menu{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #200153;
+  z-index: -999;
+
+}
+
+.show{
+  display: flex;
+
+}
+header{
+  justify-content: flex-end;
+}
+.menu-control{
+  display: block;
+  border: none;
+  background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

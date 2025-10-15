@@ -26,3 +26,15 @@ function apo() { // Объявление функции, которая буде
 }
 
 window.addEventListener("scroll", apo); // Добавляем обработчик события scroll — он будет запускать функцию apo при прокрутке страницы
+
+
+
+const menuControl =  document.querySelector(".menu-control ");
+const menu = document.querySelector (".menu")
+
+function toggleMenu(){
+
+ menu.classList.toggle('show')
+}
+
+menuControl.addEventListener("click",toggleMenu)
