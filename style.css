@@ -9,6 +9,8 @@
 /* Основные стили секций */
 section {   
   min-height: 100vh; /* Минимальная высота секции — высота окна браузера */
+  background-size: cover; 
+  background-position: center;
 }  
 
 #main {   
@@ -460,6 +462,7 @@ section {
   transition: all 0.3s ease;   
   font-family: 'Comfortaa', sans-serif;   
   margin-top: 30px; 
+  text-decoration: none;
 }
 .button2:hover, .button3:hover {   
   transform: translateY(-5px);   
