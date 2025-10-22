@@ -207,6 +207,7 @@ section {
 .purple-photo-container {  
   display: flex;  
   align-items: center; 
+
 }
 
 /* Белая плашка с фото */
@@ -434,21 +435,31 @@ section {
   height: 401px;    
   margin-top: 200px; 
 }
+
+.apo-ima {   
+  display: block;   
+  width: 340px;   
+  height: 350px;    
+
+}
+
+
 .apo-icons {   
   display: flex;   
   justify-content: center;   
   gap: 20px;   
-  width: 92px;   
-  max-width: 92px; 
+  width: 87px;   
+  max-width: 88px; 
   margin-top: -200px; 
 }
 .apo-icons img {   
-  width: 92px;   
-  height: 92px;   
+  width: 80px;   
+  height: 80px;   
   object-fit: contain; 
+    margin-top: 25px;
 }
 /*3*/
-.button2, .button3 {   
+.button2{   
   background-color: #BBFF2C;   
   color: black;   
   padding: 12px 24px;   
@@ -459,7 +470,23 @@ section {
   cursor: pointer;   
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);   
   margin: 1px auto;   
-  transition: all 0.3s ease;   
+  transition: all 0.5s ease;   
+  font-family: 'Comfortaa', sans-serif;   
+  margin-top: 30px; 
+  text-decoration: none;
+}
+.button3 {   
+  background-color: #BBFF2C;   
+  color: black;   
+  padding: 12px 24px;   
+  border: none;   
+  border-radius: 100px;   
+  font-size: 20px;   
+  font-weight: 700;   
+  cursor: pointer;   
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);   
+  margin: 1px auto;   
+  transition: all 0.5s ease;   
   font-family: 'Comfortaa', sans-serif;   
   margin-top: 30px; 
   text-decoration: none;
@@ -575,7 +602,7 @@ header{
   justify-content: space-between; 
   align-items: center; 
   gap: 18px; 
-  padding-right: 108px;       
+  padding-right: 10px;       
   padding-left: 73px;              
   padding-top: 77px; 
 }
@@ -701,19 +728,74 @@ header{
   background: none;
 }
 
+.photo-plate {   
+  width: 376px;   
+  border-radius: 8px;   
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);   
+  padding: 20px;   
+  box-sizing: border-box;   
+  background-color: #d2d0f7; 
+    margin-bottom: 800px;
+
+}
+
+.left-text-block {  
+  width: 320px;
+  height: 218px;
+
+  background-color: #792aff;   
+  padding: 40px;   
+  padding-right: 200px; 
+    margin-right: -450px;
+
+}
+
+.apo-im3 {   
+  display: block;   
+  width: 320px;   
+  height: 244px;    
+  margin-top: 200px; 
+}
+
+.additional-text {   
+  color: rgb(0, 0, 0);   
+  font-family: 'Inter', sans-serif;   
+  font-weight: 800;   
+}
+.additional-text-overlay {   
+  top: 230px;   
+  left: 330px;   
+  z-index: 2;
+     font-size: 10px;     /* маленький текст */
+        margin-top: 10px;
+}
+.overlay-title {    
+           
+  font-family: 'Inter', sans-serif;   
+  font-size: 70px;      
+  line-height: 5px;    
+  text-shadow: 5px 5px black;  
+      margin-bottom: -120px;
+}
 
 
+.images-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.images-container img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 400px; /* ограничиваем максимальную высоту */
+    object-fit: contain; /* сохраняет пропорции без обрезки */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 
 
 

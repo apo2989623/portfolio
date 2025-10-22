@@ -28,13 +28,19 @@ function apo() { // Объявление функции, которая буде
 window.addEventListener("scroll", apo); // Добавляем обработчик события scroll — он будет запускать функцию apo при прокрутке страницы
 
 
+// Объявление переменной menuControl и сохранение в неё ссылки на элемент с классом "menu-control"
+const menuControl = document.querySelector(".menu-control ");
 
-const menuControl =  document.querySelector(".menu-control ");
-const menu = document.querySelector (".menu")
+// Объявление переменной menu и сохранение в неё ссылки на элемент с классом "menu"
+const menu = document.querySelector(".menu")
 
+// Объявление функции с именем toggleMenu (переключить меню)
 function toggleMenu(){
-
- menu.classList.toggle('show')
+    // Переключение класса 'show' у элемента menu
+    // Если класс есть - удаляет его, если нет - добавляет
+    menu.classList.toggle('show')
 }
 
-menuControl.addEventListener("click",toggleMenu)
+// Добавление обработчика события "click" на элемент menuControl
+// При клике на menuControl будет вызываться функция toggleMenu
+menuControl.addEventListener("click", toggleMenu)
