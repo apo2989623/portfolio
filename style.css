@@ -242,6 +242,9 @@ section {
   background-color: #792aff;   
   padding: 40px;   
   padding-right: 20px; 
+   display: flex;
+ flex-direction: column;
+ align-items: flex-start;
 }
 .left-text-block h3 {   
   font-size: 1.4rem; /* Уменьшенный размер */
@@ -449,8 +452,6 @@ section {
   justify-content: center;   
   gap: 20px;   
   width: 87px;   
-  max-width: 88px; 
-  margin-top: -200px; 
 }
 .apo-icons img {   
   width: 80px;   
@@ -469,11 +470,11 @@ section {
   font-weight: 700;   
   cursor: pointer;   
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);   
-  margin: 1px auto;   
   transition: all 0.5s ease;   
   font-family: 'Comfortaa', sans-serif;   
   margin-top: 30px; 
   text-decoration: none;
+  display: block;
 }
 .button3 {   
   background-color: #BBFF2C;   
@@ -636,6 +637,16 @@ header{
   display: none;
 }
 
+.forn{
+  background-image: url(/im/form3.png);
+  width: 640px;
+  height: 409px;
+  padding-top: 80px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -740,14 +751,17 @@ header{
 }
 
 .left-text-block {  
+
   width: 320px;
   height: 218px;
 
   background-color: #792aff;   
   padding: 40px;   
   padding-right: 200px; 
-    margin-right: -450px;
-
+  margin-right: -450px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
 }
 
 .apo-im3 {   
