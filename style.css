@@ -58,7 +58,7 @@ section {
  
 /* Изображения внутри обертки, абсолютное позиционирование */
 .inner-img {     
-  position: absolute;     
+ 
   width: 154px;     
   height: 140px;     
   margin-top: 9px;     
@@ -67,7 +67,6 @@ section {
   padding-left:100px;   
 }   
 .inner-img1 {     
-  position: absolute;     
   width: 154px;     
   height: 140px;     
   margin-top: 9px;     
@@ -75,7 +74,7 @@ section {
   left: 19px;    
 }       
 .inner-img21 {      
-  position: absolute;     
+    
   width: 154px;     
   height: 140px;     
   margin-top: 9px;     
@@ -85,7 +84,7 @@ section {
   font-family: sans-serif; /* Жирный текст, семейство шрифтов */
 }   
 .inner-img31 {     
-  position: absolute;     
+
   margin-top: 13px;     
   top: 214px;           
   left: 19px;     
@@ -94,7 +93,7 @@ section {
   opacity: 0.5; /* Прозрачность */  
 }                           
 .inner-img2 {      
-  position: absolute;     
+ 
   width: 154px;     
   height: 140px;     
   margin-top: 9px;     
@@ -105,7 +104,7 @@ section {
   font-family: sans-serif; /* Добавленный шрифт */   
 }   
 .inner-img3 {     
-  position: absolute;     
+
   margin-top: 13px;     
   top: 214px;       
   padding-left:100px;     
@@ -175,7 +174,7 @@ section {
   overflow: hidden; 
 }
 .full-bg-image {   
-  position: absolute;   
+
   top: 0;   
   left: 0;   
   width: 100%;   
@@ -269,7 +268,7 @@ section {
 
 /* Кнопка "Мои навыки" с анимацией */
 .skills-button {   
-  position: absolute;   
+
   left: 60px;    
   font-weight: 400; /* Обычное начертание */ 
   bottom: 24px;   
@@ -315,7 +314,7 @@ section {
 }
 .skills-button::before {   
   content: '';   
-  position: absolute;   
+
   top: 0;   
   left: 0;   
   width: 100%;   
@@ -362,7 +361,7 @@ section {
 
 /* Анимация планеты */
 .planet-animation {   
-  position: absolute;   
+
   width: 120px;   
   height: 120px;   
   right: 30px;   
@@ -511,7 +510,7 @@ section {
   width: 100%; 
 }
 .text-overlay {   
-  position: absolute;   
+
   top: 20%;   
   left: 0;   
   width: 100%;   
@@ -535,7 +534,7 @@ section {
 }
 /* Для адаптивности на мобильных устройствах */
 .additional-text-overlay {   
-  position: absolute;   
+
   top: 55%;   
   left: 50%;   
   transform: translateX(-50%);   
@@ -565,7 +564,7 @@ header{
   font-size: 64px;   
   font-weight: 700;   
   left: 50px;   
-  position: absolute; 
+
 }
 .menu_link{   
   background-color: #fff;   
@@ -702,7 +701,7 @@ header{
   font-size: 53px;   
   font-weight: 700;   
   left: 20px;   
-  position: absolute; 
+
 }
 .apo4 {   
   width: 123px;   
