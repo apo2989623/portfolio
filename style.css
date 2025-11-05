@@ -201,6 +201,7 @@ section {
   text-transform: uppercase;  /* Верхний регистр */
   text-shadow: 5px 5px black;  
   color: white; 
+
 }
 /* контейнер для фио и области карточки  */
 .purple-photo-container {  
@@ -431,6 +432,16 @@ section {
   align-items: center;   
   width:244;    
 }
+.apo-im8 {   
+
+  width: 120px;   
+  height: 120px;    
+  margin-top: 0px; 
+  margin-left: 1700px;
+
+
+}
+
 .apo-im3 {   
   display: block;   
   width: 638px;   
@@ -438,6 +449,12 @@ section {
   margin-top: 200px; 
 }
 
+.apo-im3 {   
+  display: block;   
+  width: 638px;   
+  height: 401px;    
+  margin-top: 200px; 
+}
 .apo-ima {   
   display: block;   
   width: 340px;   
@@ -561,9 +578,11 @@ header{
 .logo{   
   color: #BBFF2C;   
   font-family: Inter;   
-  font-size: 64px;   
+  font-size: 70px;   
   font-weight: 700;   
-  left: 50px;   
+  left: 200px;   
+
+
 
 }
 .menu_link{   
@@ -593,7 +612,7 @@ header{
   text-transform: uppercase;  
   text-shadow: 5px 5px black;  
   color: white;     
-  padding-top: 130px; 
+  padding-top: 35px; 
 }
 
 /* Контейнер для изображений внутри секции */
