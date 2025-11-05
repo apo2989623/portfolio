@@ -36,9 +36,10 @@ section {
 
 /* Обертка для изображения с наложением */
 .image-overlay {     
-  position: relative;      
-  margin-left: 214px;     
-  display: inline-block; 
+      display: flex;
+      align-items:center ;
+      justify-content: center;
+      gap: 8px;
 }
 
 /* Основное изображение */
@@ -59,12 +60,6 @@ section {
 /* Изображения внутри обертки, абсолютное позиционирование */
 .inner-img {     
  
-  width: 154px;     
-  height: 140px;     
-  margin-top: 9px;     
-  top: 35px;     
-  left: 19px;   
-  padding-left:100px;   
 }   
 .inner-img1 {     
   width: 154px;     
@@ -84,7 +79,6 @@ section {
   font-family: sans-serif; /* Жирный текст, семейство шрифтов */
 }   
 .inner-img31 {     
-
   margin-top: 13px;     
   top: 214px;           
   left: 19px;     
@@ -93,27 +87,18 @@ section {
   opacity: 0.5; /* Прозрачность */  
 }                           
 .inner-img2 {      
- 
-  width: 154px;     
-  height: 140px;     
-  margin-top: 9px;     
-  top: 186px;     
-  left: 19px;     
-  font-weight: 700;       
-  padding-left:100px;     
+  margin-top: 10px;
+  font-weight: 700px; 
+  font-size: 20px;      
   font-family: sans-serif; /* Добавленный шрифт */   
 }   
 .inner-img3 {     
-
-  margin-top: 13px;     
-  top: 214px;       
-  padding-left:100px;     
-  left: 19px;     
+  font-size: 20px;
+    margin-top: 14px;
   font-weight: 400; 
   font-family: Comfortaa, sans-serif; 
   opacity: 0.5; 
 }
-
 /* Стили для маскота и окон */
 .maskot {   
   width: 92px;   
@@ -581,7 +566,7 @@ header{
   font-size: 70px;   
   font-weight: 700;   
   left: 200px;   
-
+  position: absolute;
 
 
 }
@@ -664,12 +649,33 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+  .card{
+    background-image:url(im/card.png);
+    width: 204px;
+    height: 308px;
+    padding: 20px;
+    padding-top: 35px;
+    box-sizing: border-box;
+  }
 
+  .comment{
+       background-image:url(im/comment.png);
+      height: 161px;
+      width: 327px;
+      font-size: 20px;
+      font-family: Confortaa;
+       padding: 20px;
+      padding-left: 37px;
+    box-sizing: border-box;
+  }
 
 
 /* Медиа-запрос для маленьких экранов (адаптация заголовков) */
 @media(max-width:1000px){  
+
+
   
   
   .window {    
