@@ -11,6 +11,10 @@ section {
   min-height: 100vh; /* Минимальная высота секции — высота окна браузера */
   background-size: cover; 
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
 }  
 
 #main {   
@@ -344,7 +348,14 @@ section {
 .info-text strong {   
   font-weight: 600; 
 }
+.comment-container{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
 
+
+}
 /* Анимация планеты */
 .planet-animation {   
 
@@ -599,22 +610,29 @@ header{
   color: white;     
   padding-top: 35px; 
 }
+.work-example{
+height: 230px;
+flex-basis: 20%;
+flex-grow:  1;
+}
+
+.work-example img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 
 /* Контейнер для изображений внутри секции */
 .images-container {     
-  display: flex;     
-  justify-content: space-between; 
+  display: flex;    
   align-items: center; 
   gap: 18px; 
   padding-right: 10px;       
-  padding-left: 73px;              
+  padding-left: 1px;              
   padding-top: 77px; 
 }
-.images-container img {     
-  width: 100px;     
-  height: auto;        
-  flex: 1; 
-}
+
 .apo4 {   
   width: 199px;   
   height: 229px;    
@@ -665,7 +683,7 @@ header{
       height: 161px;
       width: 327px;
       font-size: 20px;
-      font-family: Confortaa;
+      font-family: Comfortaa;
        padding: 20px;
       padding-left: 37px;
     box-sizing: border-box;
